@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
   if (req.body.application_name === 'jabber') {
     console.log('coming to jabber')
     const incident = await axios.post(
-      'https://msamlindev.service-now.com/api/now/table/incident',
+      'https://xxxxxx.service-now.com/api/now/table/incident',
       {
         short_description: 'Unable to login into jabber',
         description: req.body.conversation,
@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
   } else if (req.body.application_name === 'citrix') {
     console.log('coming to software')
     var incident = await axios.post(
-      'https://msamlindev.service-now.com/api/now/table/incident',
+      'https://xxxxx.service-now.com/api/now/table/incident',
       {
         short_description: 'I am unable to launch my Citrix desktop',
         description: req.body.conversation,
